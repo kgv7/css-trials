@@ -3,20 +3,40 @@
 
   <head>
     <style>
-      div {
+      body {
+        margin: 0
+      }
+      .inline-block {
         display : inline-block;
         background-color: black;
         margin : 50px 0 50px 50px;
         width: 100px;
         height: 100px;
       }
-      
+      .red-block {
+        background-color: red;
+        height: 200px;
+        width: 350px;
+      }
+      .blue-block {
+        background-color: blue;
+        height: 200px;
+        width: 350px;
+      }
     </style>
   </head>
 
   <body>
-    <div></div>
-    <div></div> 
+    <div class="red-block">
+      <div class="inline-block"></div>
+      <div class="inline-block"></div> 
+    </div>
+
+    <div class="blue-block">
+      <div class="inline-block"></div>
+      <div class="inline-block"></div> 
+    </div>
+
   </body>
 
 </html>
